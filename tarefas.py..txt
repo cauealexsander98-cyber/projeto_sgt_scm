@@ -1,0 +1,18 @@
+# Nova funcionalidade do Sistema de Gerenciamento de Tarefas (SGT)
+
+def cadastrar_tarefa(tarefas, descricao):
+    tarefa = {
+        "descricao": descricao,
+        "concluida": False
+    }
+
+    tarefas.append(tarefa)
+    return tarefa
+
+
+# Exemplo de utilização
+lista_tarefas = []
+
+cadastrar_tarefa(lista_tarefas, "Estudar Gestão de Configuração")
+
+print(lista_tarefas)
